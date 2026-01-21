@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Pet a Furry"
+run/main_scene="uid://dcj0d302k8pxg"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+config/icon="uid://bwa063i7b3ob0"
+
+[autoload]
+
+Global="*res://scripts/global.gd"
+
+[display]
+
+window/size/viewport_width=648
+window/size/viewport_height=1152
+
+[editor]
+
+version_control/autoload_on_startup=true
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

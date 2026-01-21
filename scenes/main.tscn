@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcj0d302k8pxg"]
+
+[ext_resource type="Script" uid="uid://d2iokcevgn422" path="res://scenes/main.gd" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://dq0vy2oc2jspw" path="res://scenes/cat.tscn" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://btkeu4i7o2fjl" path="res://assets/cute_background.png" id="2_sugp2"]
+[ext_resource type="PackedScene" uid="uid://5envtwvtlcyx" path="res://scenes/petpet.tscn" id="4_jyhfs"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0wfyh")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_right = 648.0
+offset_bottom = 1150.0
+texture = ExtResource("2_sugp2")
+
+[node name="Cat" parent="." instance=ExtResource("1_o5qli")]
+position = Vector2(324, 373)
+
+[node name="Counter" type="Label" parent="."]
+modulate = Color(1, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+offset_left = 252.0
+offset_top = 626.0
+offset_right = 396.13043
+offset_bottom = 665.0
+text = "Counter"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Petpet" parent="." instance=ExtResource("4_jyhfs")]

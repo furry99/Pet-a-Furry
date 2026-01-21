@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://djqr5sru0awfh"
+path="res://.godot/imported/petpet.gif-03043cf1bd8ff4abb871efa4a4983e41.tres"
+
+[deps]
+
+source_file="res://assets/petpet.gif"
+dest_files=["res://.godot/imported/petpet.gif-03043cf1bd8ff4abb871efa4a4983e41.tres"]
+
+[params]
+
+frames_per_second=30

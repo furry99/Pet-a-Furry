@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://cme3k3em6m6j6"
+path="res://.godot/imported/furry.gif-27ad00aa82a92786db337560a7896fe2.tres"
+
+[deps]
+
+source_file="res://assets/furry.gif"
+dest_files=["res://.godot/imported/furry.gif-27ad00aa82a92786db337560a7896fe2.tres"]
+
+[params]
+
+frames_per_second=30

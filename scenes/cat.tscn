@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq0vy2oc2jspw"]
+
+[ext_resource type="SpriteFrames" uid="uid://cme3k3em6m6j6" path="res://assets/furry.gif" id="1_myi5k"]
+[ext_resource type="Script" uid="uid://dsu8us858dhtl" path="res://scenes/cat.gd" id="1_se5fe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_se5fe"]
+size = Vector2(480, 481)
+
+[node name="Cat" type="Node2D"]
+script = ExtResource("1_se5fe")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -2)
+sprite_frames = ExtResource("1_myi5k")
+animation = &"gif"
+autoplay = "gif"
+frame_progress = 0.57948965
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_se5fe")
+debug_color = Color(0.6269762, 0.9244479, 0.9999997, 0.41960785)
