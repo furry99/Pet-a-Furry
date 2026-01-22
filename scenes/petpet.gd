@@ -9,6 +9,9 @@ func show_petpet():
 func hide_petpet():
 	petpet.hide()
 
+func _on_hide_timer_timeout():
+	pass
+
 func actually_pet():
 	petpet.frame = 0
 	petpet.play("gif", 1.6)

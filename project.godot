@@ -26,6 +26,8 @@ Global="*res://scripts/global.gd"
 
 window/size/viewport_width=648
 window/size/viewport_height=1152
+window/size/initial_position_type=0
+window/handheld/orientation=1
 
 [editor]
 

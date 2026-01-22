@@ -25,6 +25,10 @@ func _unhandled_input(event: InputEvent) -> void:
 			$Cat.catpressed()
 			$Petpet.actually_pet()
 
+func _process(delta: float) -> void:
+	global_position = get_viewport().get_camera_2d().global_position
+
+
 func _ready() -> void:
 	Global.load_data()
 	_setupcatmousedetector()
